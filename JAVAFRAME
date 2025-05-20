@@ -1,1 +1,39 @@
+#code form colro java
+
+import javax.swing.*;
+import java.awt.*;
+
+public class LoginColorForm {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Login Project");
+        frame.setSize(500, 200);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(null);
+
+        // Set background color using a panel
+        JPanel panel = new JPanel();
+        panel.setBounds(0, 0, 500, 200);
+        panel.setLayout(null);
+        panel.setBackground(new Color(230, 240, 255)); // light blue background
+
+        // Username label
+        JLabel userLabel = new JLabel("Username:");
+        userLabel.setBounds(20, 20, 80, 25);
+        userLabel.setForeground(new Color(0, 51, 102)); // dark blue text
+
+        // Username text field
+        JTextField userText = new JTextField();
+        userText.setBounds(100, 20, 200, 25);
+        userText.setBackground(new Color(255, 255, 204)); // light yellow field
+        userText.setForeground(Color.BLACK); // text color
+
+        // Add components to panel
+        panel.add(userLabel);
+        panel.add(userText);
+        frame.add(panel);
+
+        // Make frame visible
+        frame.setVisible(true);
+    }
+}
 
